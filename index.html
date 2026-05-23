@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متتبع الاستهلاك المسؤول</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 متتبع الاستهلاك اليومي</h1>
+        <p>سجل عدد الأكياس أو الزجاجات البلاستيكية التي استخدمتها اليوم:</p>
+        
+        <div class="input-section">
+            <input type="number" id="itemCount" placeholder="أدخل العدد هنا..." min="0">
+            <button onclick="addItem()">إضافة للسجل</button>
+        </div>
+
+        <div class="stats">
+            <h2>الإجمالي اليومي: <span id="totalDisplay">0</span> قطع</h2>
+            <p id="message"></p>
+        </div>
+
+        <button class="reset-btn" onclick="resetCount()">تصفير العداد</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
